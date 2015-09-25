@@ -3,3 +3,4 @@
 
 sudo cp -r .vim ~/
 sudo cp vimrc ~/.vimrc
+sudo cp .editorconfig ~/.editorconfig
