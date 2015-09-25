@@ -1,0 +1,5 @@
+#!/bin/bash
+# My first script
+
+sudo cp -r .vim ~/
+sudo cp vimrc ~/.vimrc

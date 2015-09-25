@@ -1,6 +1,6 @@
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype plugin indent on
 
 set nocompatible
@@ -63,8 +63,8 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 "Invisible character colors 
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+highlight NonText guifg=#aaaaaa
+highlight SpecialKey guifg=#aaaaaa
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -82,3 +82,5 @@ nnoremap ; :
 au FocusLost * :wa
 
 nnoremap <leader>w <C-w>v<C-w>l
+
+map <C-n> :NERDTreeToggle<CR>
