@@ -61,13 +61,6 @@ set textwidth=74
 set formatoptions=qrn1
 set colorcolumn=80
 
-set list
-set listchars=tab:▸\ ,eol:¬
-
-"Invisible character colors 
-highlight NonText guifg=#aaaaaa
-highlight SpecialKey guifg=#aaaaaa
-
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
