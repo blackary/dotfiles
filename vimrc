@@ -53,6 +53,8 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
 
 set wrap
 set textwidth=74
