@@ -92,3 +92,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>a :Ack
 
 map <leader>n :NERDTreeToggle<CR>
+
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
