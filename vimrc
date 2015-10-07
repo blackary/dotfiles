@@ -75,6 +75,7 @@ nnoremap k gk
 nnoremap ; :
 
 au FocusLost * :wa
+autocmd BufLeave,FocusLost * silent! wall
 
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
