@@ -1,46 +1,45 @@
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 filetype off
-call pathogen#infect()
+call pathogen#infect() "Allow for pathogen plugins
 filetype plugin indent on
 
-set nocompatible
+set nocompatible "Doesn't have to be compatible with vi
 
-set modelines=0
+set modelines=0 "Disables modelines
 
-set expandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-set autoindent
-set smartindent
-set colorcolumn=80
-set fileformat=unix
+set expandtab "Turns <TAB> into spaces
+set smarttab "Use tabs for indentation and spaces for alignment
+set shiftwidth=4 "Affects what happens when you press >>, etc.
+set tabstop=4 "Changes the width of the <TAB> character
+set softtabstop=4 "Somehow different from tabstop...?
+set autoindent "Copy indentation from previous line when going to next line
+set colorcolumn=80 "Creates a colored line showing where 80 characters is
+set fileformat=unix "Saves files in unix format by default
 
-func! DeleteTrailingWS()
+func! DeleteTrailingWS() "Deletes trailing whitespace
   exe "normal mz"
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.py :call DeleteTrailingWS() "Delete whitespace in py files
 
 set encoding=utf-8
-set scrolloff=3
-set showmode
-set showcmd
-set hidden
-set wildmenu
-set wildmode=list:longest
-set visualbell
-set cursorline
-set ttyfast
-set ruler
-set backspace=indent,eol,start
-set laststatus=2
-set relativenumber
-set undofile
+set scrolloff=3 "Leaves 3 lines visisble when scrolling to top or bottom of page
+set showmode "Shows if 'Visual' line is on
+set showcmd "Shows current command going on
+set nohidden "When closing buffers, they must be saved
+set wildmenu "Autocomplete in command line with <TAB>
+set wildmode=list:longest,full "On first tab, show all options, on second tab, scroll through options
+set visualbell "Flash instead of making a 'beep' sound
+set cursorline "Highlight current line
+set ttyfast "Allow fast scrolling
+set ruler "Display current line, column, percentage on bottom of page
+set backspace=indent,eol,start "Make backspace work 'normally', i.e. going back to previous line when it should
+set laststatus=2 "Always display status line
+set relativenumber "Show relative line numbers on left side
+set undofile "Save file that tracks edits of each file
 
-let mapleader = ","
+let mapleader = "," "Make , work as leader key, instead of \
 
 nnoremap / /\v
 vnoremap / /\v
