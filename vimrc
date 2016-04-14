@@ -92,10 +92,7 @@ augroup myvimrc
 augroup END
 
 
-augroup vimrc "Fold by indention by default, but allow for auto-folding
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
+set foldmethod=indent
 
 "Fold and unfold by pressing space instead of za
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> 
