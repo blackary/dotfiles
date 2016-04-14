@@ -91,6 +91,17 @@ augroup myvimrc
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
 
+
+augroup vimrc "Fold by indention by default, but allow for auto-folding
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
+
+"Fold and unfold by pressing space instead of za
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> 
+vnoremap <Space> zf
+
 colo peachpuff
 syntax on
+
 
