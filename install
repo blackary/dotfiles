@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sudo rm ~/.vimrc
-sudo rm -rf ~/.vim
-sudo rm ~/.editorconfig
+rm ~/.vimrc
+rm -rf ~/.vim
+rm ~/.editorconfig
 
-sudo cp vimrc ~/.vimrc
-sudo cp -r .vim ~/
-sudo cp .editorconfig ~/.editorconfig
+cp vimrc ~/.vimrc
+cp -r .vim ~/
+cp .editorconfig ~/.editorconfig
