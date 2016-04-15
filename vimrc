@@ -98,6 +98,12 @@ set foldmethod=indent
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> 
 vnoremap <Space> zf
 
+"Remap capital W and Q to work the same as w and q
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 colo peachpuff
 syntax on
 
