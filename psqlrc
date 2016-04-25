@@ -1,0 +1,6 @@
+\set PROMPT1 '%M:%> %n@%/%R%#%x '
+\set ON_ERROR_ROLLBACK interactive
+\set COMP_KEYWORD_CASE upper
+
+\pset pager off
+\pset null '(null)'
