@@ -10,3 +10,17 @@ cp .editorconfig ~/.editorconfig
 
 rm ~/.psqlrc
 cp psqlrc ~/.psqlrc
+
+os=`uname -a`
+
+if [[ $os == *"Darwin"* ]]; then
+    rm ~/.bash_profile
+    cp bashrc ~/.bash_profile
+    source ~/.bash_profile
+    echo "NOW RUN source ~/.bash_profile"
+else
+    rm ~/.bashrc
+    cp bashrc ~/.bashrc
+    source ~/.bashrc
+    echo "NOW RUN source ~/.bashrc"
+fi 
