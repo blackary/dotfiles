@@ -24,3 +24,8 @@ else
     source ~/.bashrc
     echo "NOW RUN source ~/.bashrc"
 fi 
+
+# build command-t
+cd ~/.vim/bundle/Command-T/ruby/command-t
+ruby extconf.rb
+make
