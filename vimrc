@@ -107,4 +107,5 @@ vnoremap <Space> zf
 colo peachpuff
 syntax on
 
-
+set wildignore+=*.pyc
+set wildignore+=*.orig
