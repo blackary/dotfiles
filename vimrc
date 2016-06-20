@@ -107,5 +107,12 @@ vnoremap <Space> zf
 colo peachpuff
 syntax on
 
+" Ignore files in command-t searches
 set wildignore+=*.pyc
 set wildignore+=*.orig
+set wildignore+=~*
+
+nnoremap <silent> <leader>b :CommandTMRU<CR>
+let g:CommandTNeverShowDotFiles=1
+let g:CommandTAcceptSelectionVSplitMap = '<CR>'
+let g:CommandTAcceptSelectionMap = '<C-v>'
