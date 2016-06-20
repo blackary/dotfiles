@@ -112,7 +112,9 @@ set wildignore+=*.pyc
 set wildignore+=*.orig
 set wildignore+=~*
 
+" Automatically show buffers sorted by most recent
 nnoremap <silent> <leader>b :CommandTMRU<CR>
 let g:CommandTNeverShowDotFiles=1
+" Switch enter and ctrl-v to open in split by default
 let g:CommandTAcceptSelectionVSplitMap = '<CR>'
 let g:CommandTAcceptSelectionMap = '<C-v>'
