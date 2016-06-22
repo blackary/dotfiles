@@ -13,6 +13,9 @@ cp .editorconfig ~/.editorconfig
 rm ~/.psqlrc
 cp psqlrc ~/.psqlrc
 
+rm ~/.ackrc
+cp ackrc ~/.ackrc
+
 os=`uname -a`
 
 if [[ $os == *"Darwin"* ]]; then
