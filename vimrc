@@ -111,6 +111,7 @@ syntax on
 set wildignore+=*.pyc
 set wildignore+=*.orig
 set wildignore+=~*
+set wildignore+=*.scssc
 
 " Automatically show buffers sorted by most recent
 nnoremap <silent> <leader>b :CommandTMRU<CR>
@@ -118,3 +119,11 @@ let g:CommandTNeverShowDotFiles=1
 " Switch enter and ctrl-v to open in split by default
 let g:CommandTAcceptSelectionVSplitMap = '<CR>'
 let g:CommandTAcceptSelectionMap = '<C-v>'
+
+" Make control-p open with c-p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Make control-p open in the current directory, or in the git main
+" directory
+let g:ctrlp_working_path_mode = 'ra'
