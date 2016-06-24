@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull && git submodule init && git submodule update && git submodule status
 
 rm ~/.vimrc
 rm -rf ~/.vim
@@ -6,7 +7,6 @@ rm ~/.editorconfig
 
 cp vimrc ~/.vimrc
 cp -r .vim ~/
-git pull && git submodule init && git submodule update && git submodule status
 
 cp .editorconfig ~/.editorconfig
 
