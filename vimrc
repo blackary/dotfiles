@@ -152,3 +152,7 @@ if has('gui_running')
     set background=dark
     colorscheme solarized
 endif
+
+
+" Make Ack not replace current buffer when usedset
+set switchbuf=useopen,usetab,vsplit
