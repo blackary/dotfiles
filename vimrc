@@ -78,7 +78,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ack!<Space>
 
 map <leader>n :NERDTreeToggle<CR>
 
@@ -152,7 +152,3 @@ if has('gui_running')
     set background=dark
     colorscheme solarized
 endif
-
-
-" Make Ack not replace current buffer when usedset
-set switchbuf=useopen,usetab,vsplit
