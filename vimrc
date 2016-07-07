@@ -78,7 +78,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>a :Ack!<Space>
+nnoremap <leader>a :Ack! -i<Space>
 
 map <leader>n :NERDTreeToggle<CR>
 
