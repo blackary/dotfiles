@@ -29,6 +29,3 @@ else
     source ~/.bashrc
     echo "NOW RUN source ~/.bashrc"
 fi 
-
-cd ~/.vim/bundle/YouCompleteMe
-./install.py
