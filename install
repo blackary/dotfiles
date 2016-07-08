@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull && git submodule init && git submodule update && git submodule status
+git pull && git submodule update --init --recursive && git submodule status
 
 rm ~/.vimrc
 rm -rf ~/.vim
@@ -29,3 +29,6 @@ else
     source ~/.bashrc
     echo "NOW RUN source ~/.bashrc"
 fi 
+
+cd ~/.vim/bundle/YouCompleteMe
+./install.py
