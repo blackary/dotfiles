@@ -152,3 +152,6 @@ if has('gui_running')
     set background=dark
     colorscheme solarized
 endif
+
+" Make Control-A select all
+map <C-a> <esc>ggVG<CR>
