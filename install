@@ -28,6 +28,9 @@ else
     cp bashrc ~/.bashrc
     source ~/.bashrc
     echo "NOW RUN source ~/.bashrc"
+    if [ -d "/opt/spensa/agportal" ]; then
+        echo 'cd /opt/spensa/agportal' >> ~/.bashrc
+    fi
 fi 
 
-pip install -r requirements.txt
+sudo pip install -r requirements.txt
