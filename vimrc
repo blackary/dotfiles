@@ -161,3 +161,11 @@ highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Re
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+
+" set macvim to start in a project folder
+if has("gui_macvim")
+    cd ~/Desktop/aa_tools
+endif
+
+" Auto-run flake8 (py syntac checker) on file save
+autocmd BufWritePost *.py call Flake8()

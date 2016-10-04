@@ -29,3 +29,5 @@ else
     source ~/.bashrc
     echo "NOW RUN source ~/.bashrc"
 fi 
+
+pip install -r requirements.txt
