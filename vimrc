@@ -177,3 +177,6 @@ autocmd BufWritePost *.py call Flake8()
 
 " Allow crontab editing with vim
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+" Use up to toggle line numbers on and off
+noremap <up> :set number!<CR> \| :set rnu!<CR>
