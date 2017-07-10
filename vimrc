@@ -4,6 +4,7 @@ call pathogen#infect() "Allow for pathogen plugins
 filetype plugin indent on
 
 set nocompatible "Doesn't have to be compatible with vi
+set path+=**
 
 set modelines=0 "Disables modelines
 
@@ -29,7 +30,7 @@ set showmode "Shows if 'Visual' line is on
 set showcmd "Shows current command going on
 set nohidden "When closing buffers, they must be saved
 set wildmenu "Autocomplete in command line with <TAB>
-set wildmode=list:longest,full "On first tab, show all options, on second tab, scroll through options
+set wildmode=list:full,full "On first tab, select longest common match, on second tab, scroll through options
 set visualbell "Flash instead of making a 'beep' sound
 set cursorline "Highlight current line
 set ttyfast "Allow fast scrolling
