@@ -5,6 +5,8 @@ rm ~/.vimrc
 rm -rf ~/.vim
 rm ~/.editorconfig
 
+cp tmux.conf ~/.tmux.conf
+
 cp vimrc ~/.vimrc
 cp -r .vim ~/
 
