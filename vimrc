@@ -41,6 +41,8 @@ set relativenumber "Show relative line numbers on left side
 set number "Show absolute line number for the current line
 set undofile "Save file that tracks edits of each file
 
+set complete-=i "Don't search included files
+
 let mapleader = "," "Make , work as leader key, instead of \
 
 nnoremap / /\v
@@ -181,3 +183,16 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 
 " Use up to toggle line numbers on and off
 noremap <up> :set number!<CR> \| :set rnu!<CR>
+
+" Automatically switch to paste mode
+" from https://github.com/ryanpcmcquen/fix-vim-pasting
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+    set pastetoggle=<Esc>[201~
+    set paste
+    return ""
+endfunction
