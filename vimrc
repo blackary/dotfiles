@@ -37,7 +37,7 @@ set ttyfast "Allow fast scrolling
 set ruler "Display current line, column, percentage on bottom of page
 set backspace=indent,eol,start "Make backspace work 'normally', i.e. going back to previous line when it should
 set laststatus=2 "Always display status line
-set relativenumber "Show relative line numbers on left side
+"set relativenumber "Show relative line numbers on left side
 set number "Show absolute line number for the current line
 set undofile "Save file that tracks edits of each file
 
