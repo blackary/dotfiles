@@ -190,6 +190,6 @@ function! XTermPasteBegin()
     return ""
 endfunction
 
-set undodir=/tmp
-set backupdir=/tmp
-set directory=/tmp
+set undodir=/tmp//
+set backupdir=/tmp//
+set directory=/tmp//
