@@ -189,3 +189,7 @@ function! XTermPasteBegin()
     set paste
     return ""
 endfunction
+
+set undodir=/tmp
+set backupdir=/tmp
+set directory=/tmp
