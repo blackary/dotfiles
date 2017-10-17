@@ -38,7 +38,7 @@ set ruler "Display current line, column, percentage on bottom of page
 set backspace=indent,eol,start "Make backspace work 'normally', i.e. going back to previous line when it should
 set laststatus=2 "Always display status line
 "set relativenumber "Show relative line numbers on left side
-set number "Show absolute line number for the current line
+"set number "Show absolute line number for the current line
 set undofile "Save file that tracks edits of each file
 
 set complete-=i "Don't search included files
@@ -93,6 +93,7 @@ augroup END
 
 
 set foldmethod=indent
+set foldlevelstart=20
 
 "Fold and unfold by pressing space instead of za
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> 
