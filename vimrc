@@ -169,7 +169,7 @@ if has("gui_macvim")
 endif
 
 " Auto-run flake8 (py syntac checker) on file save
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 
 " Allow crontab editing with vim
 autocmd filetype crontab setlocal nobackup nowritebackup
