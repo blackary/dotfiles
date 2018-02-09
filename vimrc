@@ -4,7 +4,7 @@ call pathogen#infect() "Allow for pathogen plugins
 filetype plugin indent on
 
 set nocompatible "Doesn't have to be compatible with vi
-set path+=**
+set path+=** "Allow find by relative path from current directory
 
 set modelines=0 "Disables modelines
 
@@ -105,7 +105,8 @@ vnoremap <Space> zf
 :command W w
 :command Q q
 
-colo peachpuff
+colorscheme elflord
+
 syntax on
 
 " Ignore files in command-t searches
@@ -194,3 +195,5 @@ endfunction
 set undodir=/tmp//
 set backupdir=/tmp//
 set directory=/tmp//
+
+set belloff=all
