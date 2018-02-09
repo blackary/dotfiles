@@ -197,3 +197,12 @@ set backupdir=/tmp//
 set directory=/tmp//
 
 set belloff=all
+
+" Open vertical splits on the right of current buffer
+set splitright
+
+" Quickly open a buffer for scribble
+map <leader>q :vs ~/buffer<cr>
+
+" Quickly open a markdown buffer for scribble
+map <leader>x :vs ~/buffer.markdown<cr>

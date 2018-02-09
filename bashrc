@@ -4,3 +4,4 @@ set -o vi
 alias gpush='git push -u && git push --tags'
 alias glog='git log --decorate'
 alias gtags='git tag -n99'
+alias gversion='git describe'
