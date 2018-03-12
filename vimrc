@@ -31,7 +31,8 @@ set showcmd "Shows current command going on
 set nohidden "When closing buffers, they must be saved
 set wildmenu "Autocomplete in command line with <TAB>
 set wildmode=list:full,full "On first tab, select longest common match, on second tab, scroll through options
-set visualbell "Flash instead of making a 'beep' sound
+set visualbell "Don't make a beep sound
+set t_vb=      "Make visual bell do nothing
 set cursorline "Highlight current line
 set ttyfast "Allow fast scrolling
 set ruler "Display current line, column, percentage on bottom of page
@@ -195,8 +196,6 @@ endfunction
 set undodir=/tmp//
 set backupdir=/tmp//
 set directory=/tmp//
-
-set belloff=all
 
 " Open vertical splits on the right of current buffer
 set splitright
