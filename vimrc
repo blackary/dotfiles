@@ -106,8 +106,6 @@ vnoremap <Space> zf
 :command W w
 :command Q q
 
-colorscheme elflord
-
 syntax on
 
 " Ignore files in command-t searches
@@ -148,10 +146,10 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
-if has('gui_running')
-    set background=dark
-    colorscheme solarized
-endif
+set t_Co=256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 " Make Control-A select all
 map <C-a> <esc>ggVG<CR>
