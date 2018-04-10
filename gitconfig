@@ -1,0 +1,19 @@
+[user]
+	email = zachary.blackwood@spensatech.com
+	name = Zachary Blackwood
+[push]
+	default = current
+	followTags = true
+[core]
+	editor = vim
+[alias]
+    which = !git branch | grep -i
+    lucky = !sh -c 'git checkout $(git which $1 -m1)' -
+	last = log -1 HEAD
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    code-review = difftool origin/master...
+    cleanup = "!git checkout master && git branch --merged | grep -v '^*' | xargs git branch -d && git checkout -"
+    logg = log --decorate
+    ppush = !git push -u && git push --tags
+    tags = tag -n99
+    v = describe
