@@ -17,3 +17,6 @@
     ppush = !git push -u && git push --tags
     tags = tag -n99
     v = describe
+[merge]
+	tool = vimdiff
+

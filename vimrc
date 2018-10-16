@@ -161,7 +161,7 @@ highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Re
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
 
 " Change color of 80 column to not be awful
-highlight ColorColumn ctermbg=6 guibg=#2c2d27 
+highlight ColorColumn ctermbg=233 guibg=#2c2d27 
 highlight Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " set macvim to start in a project folder
