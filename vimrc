@@ -169,7 +169,7 @@ highlight Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " set macvim to start in a project folder
 if has("gui_macvim")
-    cd ~/Desktop/aa_tools
+    cd ~/Desktop/snippets/
 endif
 
 " Auto-run flake8 (py syntac checker) on file save
