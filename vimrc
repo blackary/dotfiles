@@ -84,6 +84,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 nnoremap <leader>a :Ack! -i<Space>
+if executable('ag')
+  let g:ackprg = 'ag'
+endif
 
 map <leader>n :NERDTreeToggle<CR>
 
