@@ -83,7 +83,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>a :Ack! -i<Space>
+nnoremap <leader>a :Ack!
 if executable('ag')
   let g:ackprg = 'ag'
 endif
