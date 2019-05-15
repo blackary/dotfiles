@@ -206,3 +206,5 @@ map <leader>q :vs ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
 map <leader>x :vs ~/buffer.markdown<cr>
+
+let g:jedi#usages_command = "<leader>N"
